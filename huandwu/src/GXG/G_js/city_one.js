@@ -8,7 +8,7 @@ export class city_one extends Component {
       super(props)
     
       this.state = {
-         dw_data:[],
+         dw_data:"",
          rm_data:[],
          sy_data:[],
          sy_zm_data:[]
@@ -84,17 +84,18 @@ export class city_one extends Component {
         })
     }
     //路由跳转
-    // jp_souch_city(id){
-    //     this.props.history.push({
-    //          pathname:"/lcy_souch",
-    //          state:{
-    //              souch_id:id
-    //          }
-    //       }
-    //     )
-    // }
+    jp_souch_city(v){
+        console.log(v)
+        this.props.history.push({
+             pathname:"/lcy_search",
+             state:{
+                 citydata:v
+             }
+          }
+        )
+    }
     
-    登录跳转
+    //登录跳转
     jp_loginin(){
         this.props.history.push({
             pathname:"/login_one"
@@ -136,8 +137,8 @@ export class city_one extends Component {
                 {/* 定位城市 */}
                 <ul id="ul_dw" >
                     <li id="li_dw_0">当前定位城市: <span>定位不准时请在城市列表中选择</span> </li>
-                    <li id="li_dw_1">
-                        <span id="sp_dw_0" >{this.dw_data?"":this.state.name}</span> 
+                    <li id="li_dw_1" onClick={this.jp_souch_city.bind(this,this.state.dw_data)}>
+                        <span id="sp_dw_0" >{this.state.dw_data?"":this.state.dw_data.name}</span> 
                         <span id="sp_dw_1" ><i className="el-icon-arrow-right"></i></span>
                     </li>
                 </ul>
@@ -147,7 +148,7 @@ export class city_one extends Component {
                     {
                         this.state.rm_data.map((v,i)=>{
                             return (
-                               <span key={i}>{v.name}</span>
+                               <span onClick={this.jp_souch_city.bind(this,v)} key={i}>{v.name}</span>
                             )
                         })
                     }
@@ -163,7 +164,7 @@ export class city_one extends Component {
                                            
                                            this.state.sy_data[v].map((y,x)=>{
                                                return (
-                                                    <span key={x}>{y.name}</span>
+                                                    <span onClick={this.jp_souch_city.bind(this,y)} key={x}>{y.name}</span>
                                                 )
                                            })
                                         }
