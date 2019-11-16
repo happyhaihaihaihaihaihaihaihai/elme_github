@@ -1,0 +1,108 @@
+#p_title{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #3190e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+    #p_title>#sp_R {
+      float: right;
+    }
+    #sp_R {
+      line-height: 0.5rem;
+      padding-right: 0.1rem;
+      font-size: 0.2rem;
+    }
+    #sp_L{
+      line-height: 0.5rem;
+      padding-left: 0.1rem;
+      font-weight: 400;
+      color: #fff;
+      font-size: 0.2rem;
+    }
+
+    #ul_dw{
+        margin-top: 0.4rem;
+      }
+      #ul_dw>li{
+        height: 0.4rem;
+        /* border: 1px solid black; */
+        line-height: 0.4rem;
+        background-color: #fff;
+      }
+      #li_dw_0{
+        margin-bottom: 0.02rem;
+        padding-left: 0.05rem;
+      }
+      #li_dw_0>span{
+        float: right;
+        font-size: 0.06rem;
+      }
+      #sp_dw_0{
+        font-size: 0.2rem;
+        padding-left: 0.05rem;
+        color: #11c1f3;
+      }
+      #sp_dw_1{
+        font-size: 0.2rem;
+        float: right;
+        padding-right: 0.05rem;
+        /* color: #11c1f3; */
+      }
+
+      #rm{
+        margin-top: 0.2rem;
+        
+        overflow: hidden;
+      }
+      #p_rm{
+        height: 0.35rem;
+        line-height: 0.35rem;
+        padding-left: 0.05rem;
+        background-color: #fff;
+      }
+      #rm>span{
+        box-sizing: border-box;
+        background-color: #fff;
+        width: 24.7%;
+        float: left;
+        margin-left: 0.01rem;
+        margin-top: 0.02rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        color: #11c1f3;
+      }
+
+      #sy{
+        margin-top: 0.2rem;
+        
+        /* overflow: hidden; */
+      }
+      #sy>div{
+        /* background-color: #fff; */
+        margin-top: 0.2rem;
+        overflow: hidden;
+      }
+      #sy>div>span{
+        box-sizing: border-box;
+        background-color: #fff;
+        width: 24.7%;
+        float: left;
+        margin-left: 0.01rem;
+        margin-top: 0.02rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis
+      }
+      .p_sy{
+        height: 0.35rem;
+        line-height: 0.35rem;
+        padding-left: 0.05rem;
+        background-color: #fff;
+      }
