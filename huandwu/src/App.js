@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+import 'element-theme-default';
+import {BrowserRouter} from "react-router-dom"
+import Router from "./router"
 
 function App() {
   return (
     <div className="App">
-     hello
+     <BrowserRouter>
+        <Router></Router>
+     </BrowserRouter>
     </div>
   );
 }
