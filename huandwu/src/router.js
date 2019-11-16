@@ -1,8 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2019-11-16 10:51:21
+ * @LastEditTime: 2019-11-16 11:23:48
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \woshihuge\huandwu\src\router.js
+ */
 import React, { Component } from 'react'
 import {Route} from "react-router-dom"
 
 import City_one from "./GXG/G_js/city_one"
-
+import Lcy_search from "./HUGE/lcy_search"
 
 
 
@@ -21,6 +29,7 @@ export class router extends Component {
                 {/* 出口路径 */}
                 <Route exact path="/" component={City_one} ></Route>
                 <Route path="/city_one" component={City_one} ></Route>
+                <Route path="/lcy_search" component={Lcy_search} ></Route>
             </div>
         )
     }
